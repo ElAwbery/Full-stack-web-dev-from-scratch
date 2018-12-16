@@ -3,11 +3,11 @@
 """
 Created on Wed Dec 12 12:20:16 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 
 # This code bypasses commercial web servers and creates a server on my computer
-# It is the minimal code required to invoke the http server side library
+# It's the minimal code required to invoke the http server side library
 
 # Python documentation for the http.server: https://docs.python.org/3/library/http.server.html
 
@@ -50,10 +50,3 @@ with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
    print("serving at port", PORT)
    # an infinite loop of waiting for a request
    httpd.serve_forever()
-   
-# Make a three page website by modifying the above code
-   # Each of the three pages has different text on it, each page has its own url, 
-   # Each of the three pages the html contains links to the other two pages
-   # If you ask for any page other than those three, it should give you a 404 error
-   
-
