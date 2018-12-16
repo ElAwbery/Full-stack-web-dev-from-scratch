@@ -44,7 +44,7 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
        self.wfile.write(html.encode('utf-8')) 
        
        
-# set up an OS connection at PORT 80, specify the handler for the port, wait for a url request 
+# set up an socket server at PORT 80, specify the handler for the port, wait for a url request 
 
 with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
    print("serving at port", PORT)
