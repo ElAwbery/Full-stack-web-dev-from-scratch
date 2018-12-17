@@ -3,7 +3,7 @@
 """
 Created on Sun Dec 16 15:51:01 2018
 
-@author: Charlie
+@author: ElAwbery
 """
 
 import http.server
@@ -14,7 +14,7 @@ PORT = 80
 # Define the page class.
 
 class pokemon(object):
-    """
+    """Charlie
     A Pokemon object is used to construct the body of a web page representing
     that species
     """
