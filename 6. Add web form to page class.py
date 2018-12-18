@@ -93,7 +93,6 @@ class third_stage(pokemon):
 <p><label>''' + self.name + ''' uses ''' + self.first_stage\
  + ''' candy. You have </label><input type="number" style="width: 50px"> '''\
  +  str(self.name_to_object(self.first_stage).candies) + ' of them.' '''</label></p>
-<p><button>Update</button></p>
 </form>
 '''
 
