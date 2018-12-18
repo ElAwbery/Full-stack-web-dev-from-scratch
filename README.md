@@ -8,6 +8,7 @@ Each of the tasks below correspond to the file with the same number.
 2. Set up a web server. 
 3. Create a simple three page website.
 4. Separate pages from the server. (Create page objects.)
+5. Write an html form and test it
 
 
 Thanks to [@meaningness](https://twitter.com/Meaningness) for advice on architectural design and code review. 
