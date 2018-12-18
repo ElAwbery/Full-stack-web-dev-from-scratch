@@ -11,7 +11,7 @@ import socketserver
 
 PORT = 80
 
-# Define the page class.
+# Define the page class. Page classes standardize different page formulas. 
 
 class pokemon(object):
     """Charlie
@@ -36,7 +36,7 @@ class pokemon(object):
 
 class first_stage(pokemon):
     
-    # All the pokemon in an stageary sequence share the same candy type,
+    # All the pokemon in an evolutionary sequence share the same candy type,
     # so only the first stage keeps track of the candy count. So only the
     # first stage class should initialize that.
     def __init__(self, name, first_stage = None, second_stage = None, third_stage = None):
