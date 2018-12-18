@@ -44,8 +44,7 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         path = self.path
         
         # dictionary maps paths to body html
-        pokemon = {'/squirtle': """Squirtle<br> Squirtle evolves into a<a href ="wartortle">Wartortle</a><br> Its third evolution is a <a href ="blastoise">Blastoise.</a>
-""" + self.html_form,
+        pokemon = {'/squirtle': """Squirtle<br> Squirtle evolves into a<a href ="wartortle">Wartortle</a><br> Its third evolution is a <a href ="blastoise">Blastoise.</a>""" + self.html_form,
                    '/wartortle': """Wartortle<br> Wartortle is the second evolution of the <a href ="squirtle">Squirtle</a><br> Wartortle evolves into a <a href ="blastoise">Blastoise.</a>""",
                    '/blastoise': """Blastoise<br> Blastoise is the third evolution of the <a href ="squirtle">Squirtle.</a><br> It evolves from a <a href ="wartortle">Wartortle.</a>""",}
         
