@@ -10,7 +10,7 @@ Each of the tasks below correspond to the file with the same number.
 4. Separate pages from the server. (Create page objects.)
 
 
-Thanks to @meaningness for advice on architectural design and code review. 
+Thanks to [@meaningness](https://twitter.com/Meaningness) for advice on architectural design and code review. 
 
 
 
