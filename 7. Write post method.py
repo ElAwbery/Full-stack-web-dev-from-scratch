@@ -3,7 +3,7 @@
 """
 Created on Sun Dec 16 13:44:26 2018
 
-@author: Charlie
+@author: ElAwbery
 """ 
 
 """ 
@@ -49,8 +49,7 @@ class pokemon(object):
     def __str__(self):
         return self.name + " is a Pokemon"
 
-
-
+    
 class first_stage(pokemon):
     
     # All the pokemon in an evolutionary sequence share the same candy type,
@@ -123,7 +122,6 @@ You have
 </form>
 '''   
     
-  
 class third_stage(pokemon):
     
     def html_body(self):
