@@ -3,7 +3,7 @@
 """
 Created on Sun Dec 16 13:44:26 2018
 
-@author: Charlie
+@author: ElAwbery
 """ 
 
 """ 
@@ -135,8 +135,6 @@ class first_stage(pokemon):
   <button type="submit">Update</button>
 </form>
 ''')
-        
-    
 
 
 class second_stage(pokemon):
@@ -158,8 +156,6 @@ class second_stage(pokemon):
 </form>
 ''')   
     
-
-
   
 class third_stage(pokemon):
     
@@ -178,7 +174,6 @@ class third_stage(pokemon):
   <button type="submit">Update</button>
 </form>
 ''')   
-
 
 
 class PokemonHandler(http.server.SimpleHTTPRequestHandler):
@@ -205,8 +200,6 @@ class PokemonHandler(http.server.SimpleHTTPRequestHandler):
     def name_to_object(self, name):
         """Retrieves stored Pokemon instance from string name"""
         return self.pokemon_dictionary[name]  
-        
-
     
     def parse_http_arguments(self, string):
         """Takes a single string of user input from an HTML form
