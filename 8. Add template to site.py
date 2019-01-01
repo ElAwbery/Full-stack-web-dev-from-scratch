@@ -48,7 +48,6 @@ class pokemon(object):
         self.count = new_count
         return self.count
     
-    
     def template_substitute(self, template):
         """
         Takes an html string template and substitutes values for variables.
@@ -94,7 +93,6 @@ class pokemon(object):
         return self.name + " is a Pokemon"
 
 
-
 class first_stage(pokemon):
     
     # All the pokemon in an evolutionary sequence share the same candy type,
@@ -104,7 +102,6 @@ class first_stage(pokemon):
     def __init__(self, name, first_stage = None, second_stage = None, third_stage = None):
         pokemon.__init__(self, name, first_stage, second_stage, third_stage)
         self.candies = 0
-   
         
     def set_candies(self, candies):
         """
@@ -239,7 +236,6 @@ class PokemonHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.send_error(http.HTTPStatus.NOT_FOUND, "Pokemon Not Found".format(self.path))
 
-
     # TPython source code for the HTTPRequestHandler class: 
     # https://github.com/python/cpython/blob/2.7/Lib/BaseHTTPServer.py
     # "  - rfile is a file object open for reading positioned at the start of the optional input data part "
@@ -282,7 +278,6 @@ class PokemonHandler(http.server.SimpleHTTPRequestHandler):
             
         else:
             self.send_error(http.HTTPStatus.NOT_FOUND, "Sorry, something went wrong.".format(self.path))
-
         
 # set up an OS connection at PORT 80, specify the handler for the port, wait for a url request 
 
@@ -291,5 +286,3 @@ with socketserver.TCPServer(("", PORT), PokemonHandler) as httpd:
    # an infinite loop of waiting for a request
    httpd.serve_forever()
    
-
-
