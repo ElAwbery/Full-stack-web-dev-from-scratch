@@ -11,6 +11,7 @@ Each of the tasks below correspond to the file with the same number.
 5. Write an html form and test it.
 6. Add web forms to the page class.
 7. Add the POST method.
+8. Write a template engine, add templates and template method to site. 
 
 
 Thanks to [@meaningness](https://twitter.com/Meaningness) for advice on architectural design and code review. 
