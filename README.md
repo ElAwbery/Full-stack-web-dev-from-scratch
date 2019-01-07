@@ -30,11 +30,11 @@ Each of the tasks below correspond to the file with the same number.
     - Cleaned up the HTML 
   
 9. Add CSS
-  - Added header meta for CSS to HTML pages
-  - Added code to server GET method to send CSS on request
-  - Wrote simple CSS just to demonstrate that it works
-  - Added status_line to HTML for "Updated", as a thing to apply CSS to
-  (This required minor restructuring of the HTML generation code)
+    - Added header meta for CSS to HTML pages
+    - Added code to server GET method to send CSS on request
+    - Wrote simple CSS just to demonstrate that it works
+    - Added status_line to HTML for "Updated", as a thing to apply CSS to
+    (This required minor restructuring of the HTML generation code)
 
 Thanks to [@meaningness](https://twitter.com/Meaningness) for advice on architectural design and code review. 
 
