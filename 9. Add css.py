@@ -3,7 +3,7 @@
 """
 Created on Sun Dec 16 13:44:26 2018
 
-@author: Charlie
+@author: ElAwbery
 """ 
 
 """ 
@@ -96,7 +96,6 @@ class pokemon(object):
         return self.name + " is a Pokemon"
 
 
-
 class first_stage(pokemon):
     
     # All the pokemon in an evolutionary sequence share the same candy type,
@@ -106,8 +105,7 @@ class first_stage(pokemon):
     def __init__(self, name, first_stage = None, second_stage = None, third_stage = None):
         pokemon.__init__(self, name, first_stage, second_stage, third_stage)
         self.candies = 0
-   
-        
+          
     def set_candies(self, candies):
         """
         candies, a positive or negative integer
@@ -158,9 +156,7 @@ $status_line$
 </form>
 ''')   
     
-
-
-  
+ 
 class third_stage(pokemon):
     
     def html_body(self):
@@ -179,7 +175,6 @@ $status_line$
   <button type="submit">Update</button>
 </form>
 ''')   
-
 
 
 class PokemonHandler(http.server.SimpleHTTPRequestHandler):
@@ -271,7 +266,6 @@ class PokemonHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.send_error(http.HTTPStatus.NOT_FOUND, "Pokemon Not Found".format(self.path))
 
-
     # TPython source code for the HTTPRequestHandler class: 
     # https://github.com/python/cpython/blob/2.7/Lib/BaseHTTPServer.py
     # "  - rfile is a file object open for reading positioned at the start of the optional input data part "
@@ -320,7 +314,7 @@ class PokemonHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.send_error(http.HTTPStatus.NOT_FOUND, "Sorry, something went wrong.".format(self.path))
 
-        
+            
 # set up an OS connection at PORT 80, specify the handler for the port, wait for a url request 
 
 with socketserver.TCPServer(("", PORT), PokemonHandler) as httpd:
