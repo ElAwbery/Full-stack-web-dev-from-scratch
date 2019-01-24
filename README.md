@@ -9,7 +9,7 @@ Each of the tasks below correspond to the file with the same number.
 2. Set up a web server 
 
 3. Created a simple website
-    - Modifyied the server code to make a three page website
+    - Modified the server code to make a three page website
     - Each of the three pages contains different text; each page has its own url 
     - Each page contains links to the other two pages
     - Added 404 error response to the handler
